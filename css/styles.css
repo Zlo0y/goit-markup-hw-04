@@ -196,8 +196,9 @@ body {
 }
 
 .hero-section {
-  min-width: 1600px;
   display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--third-background-color);
   padding-bottom: 200px;
   padding-top: 200px;
@@ -239,11 +240,12 @@ body {
 
 .peculiarities-icon-container {
   display: flex;
-  min-width: 270px;
+  width: 270px;
+  height: 120px;
   background-color: var(--second-background-color);
   margin-bottom: 30px;
+  align-items: center;
   justify-content: center;
-  padding: 25px 0;
 }
 
 .peculiarities-container:last-child {
@@ -316,7 +318,7 @@ body {
 }
 
 .team-member-text {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .position {
@@ -468,18 +470,11 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .adress-container {
   margin-right: 70px;
-}
-
-.footer-social-container {
-  display: flex;
-  padding-top: 15px;
-  height: 80px;
-  width: 206px;
-  flex-direction: column;
 }
 
 .footer-social-heading {
@@ -491,7 +486,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-heading-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-social-list {
@@ -632,10 +627,11 @@ body {
 .project-link {
   text-decoration: none;
   cursor: pointer;
+  display: block;
 }
 
-.project-cart-container:hover,
-.project-cart-container:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }

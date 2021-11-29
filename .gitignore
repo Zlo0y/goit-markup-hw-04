@@ -106,3 +106,5 @@ dist
 .prettierrc.json
 
 .modern-normalize.css
+
+.vscode
